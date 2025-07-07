@@ -193,7 +193,7 @@ pip install pandas numpy streamlit bokeh plotly pathway
 
 ## 🚀 Live App Access
 
-You can access the live application [https://parkingappproject.streamlit.app/](YOUR_LIVE_APP_URL).
+You can access the live application [Live App](https://parkingappproject.streamlit.app/).
 
 ---
 
