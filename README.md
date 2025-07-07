@@ -205,6 +205,10 @@ Allows urban planners, stakeholders, or students to **experiment interactively**
 
 ---
 
+![architecture diagram](https://github.com/user-attachments/assets/a02d1384-d9a1-4f85-b944-72d4889585cb)
+
+---
+
 ### Explanation:
 
 1. **Real-Time Data Sources:** Data streams from parking sensors, traffic conditions, and queue lengths feed into the system continuously.
