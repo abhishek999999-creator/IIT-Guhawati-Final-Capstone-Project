@@ -171,6 +171,52 @@ Allows urban planners, stakeholders, or students to **experiment interactively**
 
 ---
 
+### 🏗️ Architecture Diagram Description
+
+```
++------------------+         +----------------------+        +---------------------+
+|                  |         |                      |        |                     |
+|  Real-Time Data   | ----->  |  Data Preprocessing  | -----> |  Pricing Models      |
+|  Sources:        |         |  & Feature Engineering|        |  (Model 1, 2, 3)    |
+|  - Parking Sensors|         |                      |        |                     |
+|  - Traffic APIs  |         +----------------------+        +---------------------+
+|  - Queue Status  |                                              |
++------------------+                                              |
+                                                                   v
+                                                          +---------------------+
+                                                          |  Rerouting Logic &   |
+                                                          |  Geo-Competitive     |
+                                                          |  Pricing Module      |
+                                                          +---------------------+
+                                                                   |
+                                                                   v
+                                                          +---------------------+
+                                                          | Streamlit Dashboard  |
+                                                          | (Visualization &     |
+                                                          | Simulation UI)       |
+                                                          +---------------------+
+                                                                   |
+                                                                   v
+                                                          +---------------------+
+                                                          | User Interaction &   |
+                                                          | Parameter Tuning     |
+                                                          +---------------------+
+```
+
+---
+
+### Explanation:
+
+1. **Real-Time Data Sources:** Data streams from parking sensors, traffic conditions, and queue lengths feed into the system continuously.
+2. **Data Preprocessing & Feature Engineering:** Raw data is cleaned, normalized, timestamped, and enriched (e.g., distance matrices) for the pricing models.
+3. **Pricing Models:** Three models (linear, demand-based, geo-competitive) compute dynamic prices based on the preprocessed data.
+4. **Rerouting Logic:** Geo-competitive pricing adjusts prices and reroutes vehicles to less congested lots.
+5. **Streamlit Dashboard:** Offers a user interface for visualizing price changes, simulating demand, and interacting with the system.
+6. **User Interaction:** Stakeholders adjust parameters and observe system behavior live.
+
+---
+
+
 ## 🔮 Future Work
 
 * Integrate **live traffic APIs** (e.g., Google Maps) for real-time congestion updates.
