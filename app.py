@@ -63,7 +63,7 @@ def plot_prices(df_lot, df_comp_lot, lot):
 st.title("🚗 Parking Dynamic Pricing Dashboard")
 
 # Load data
-df = load_data("parking.csv")
+df = load_data("dataset/parking.csv")
 
 # User inputs
 alpha = st.sidebar.slider("Pricing Sensitivity (alpha)", min_value=0.1, max_value=10.0, value=5.0, step=0.1)
